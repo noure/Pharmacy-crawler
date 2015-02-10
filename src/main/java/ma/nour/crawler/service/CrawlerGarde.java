@@ -19,7 +19,7 @@ public class CrawlerGarde {
 	@Autowired
 	PharmacyService pharService;
 
-	//@PostConstruct
+	@PostConstruct
 	public void crawle() {
 
 		String url = "http://www.laboelallali.com/Pharmacie-de-garde.html";
@@ -55,7 +55,7 @@ public class CrawlerGarde {
 					pharService.sendToApi(pharmacy);
 				
 
-//				System.out.println("********************garde**************");
+			System.out.println("********************garde**************");
 //				System.out.println("nom : " + pharmacy.getName());
 //				System.out.println("adress : " + pharmacy.getAdress());
 //				System.out.println("tele : " + pharmacy.getTele());

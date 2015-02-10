@@ -20,7 +20,7 @@ public class CrawlerAll {
 	@Autowired
 	PharmacyService pharService;
 
-	@PostConstruct
+	//@PostConstruct
 	public void crawle() { 
 
 		String url = "http://www.anahna.com/pharmacies-agadir-ca7-qa0.html";
